@@ -1,0 +1,30 @@
+dataset_path: data/2wikimultihopqa_dev_500_seed42_queries.json
+shared_corpus_path: data/2wikimultihopqa_dev_500_seed42_corpus.json
+subset_size: 500
+top_k_values: [3, 5]
+label_top_k: 5
+random_seed: 42
+train_ratio: 0.8
+output_dir: results/study_2wiki_hipporag_colbert_shared_500
+graph_backend: hipporag
+evaluation_mode: train_test
+num_folds: 5
+
+dense_backend: colbertv2
+colbert_root: colbert_cache
+colbert_experiment_name: 2wiki_shared_500
+colbert_index_name: 2wiki_shared_500.nbits2
+colbert_checkpoint: colbert-ir/colbertv2.0
+colbert_nbits: 2
+colbert_partitions: 1024
+colbert_doc_maxlen: 220
+colbert_query_maxlen: 64
+colbert_kmeans_niters: 4
+colbert_rebuild_index: true
+
+hipporag_save_dir: hipporag_cache/2wiki_shared_500
+hipporag_rebuild_index: true
+hipporag_llm_model: gpt-4.1
+hipporag_llm_base_url: ""
+hipporag_embedding_model: text-embedding-3-small
+hipporag_embedding_base_url: ""

@@ -1,0 +1,8 @@
+train_rows_path: results/study_hotpot_hipporag_shared/routing_rows.jsonl
+test_rows_path: results/study_hotpot_bm25_shared/routing_rows.jsonl
+top_k_values: [3, 5]
+random_seed: 42
+train_ratio: 0.8
+evaluation_mode: train_test
+num_folds: 5
+output_dir: results/cross_backend_hotpot_hipporag_to_bm25

@@ -1,0 +1,13 @@
+dataset_path: data/mixed_1000_seed42_queries.json
+shared_corpus_path: data/mixed_1000_seed42_corpus.json
+subset_size: 1000
+top_k_values: [3, 5]
+label_top_k: 5
+random_seed: 42
+train_ratio: 0.8
+output_dir: results/study_mixed_bm25_shared
+graph_backend: bm25
+evaluation_mode: cv
+num_folds: 5
+dense_model_name: sentence-transformers/all-MiniLM-L6-v2
+dense_allow_tfidf_fallback: false

@@ -1,0 +1,21 @@
+name: graph-routing
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - faiss-cpu
+  - ninja
+  - pip:
+      - bitarray
+      - datasets>=2.20
+      - flask
+      - numpy>=1.24
+      - openai>=1.40
+      - PyYAML>=6.0
+      - rank-bm25>=0.2.2
+      - scikit-learn>=1.3
+      - sentence-transformers>=2.7
+      - spacy>=3.7
+      - ujson>=5
+      - hipporag

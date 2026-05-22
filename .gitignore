@@ -1,0 +1,41 @@
+# macOS and editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Python build and runtime artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments
+.venv/
+venv/
+env/
+.tmp_sklearn_venv/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Experiment outputs and generated caches
+results/
+*_results/
+results_*/
+hipporag_cache/
+colbert_cache/
+lightrag_cache/
+lightrag_cache_*/
+*.sqlite
+*.db
+*.jsonl
+
+# Raw datasets are not stored in the code repository.
+data/*
+!data/.gitkeep
+
+# Local assistant/tooling scratch files
+.claude/

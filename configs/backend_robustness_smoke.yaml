@@ -1,0 +1,20 @@
+output_dir: results/backend_robustness_smoke
+evaluation_mode: train_test
+train_ratio: 0.8
+num_folds: 5
+random_seed: 42
+top_k_values: [3, 5]
+feature_correlation_mode: all_pairs
+
+datasets:
+  - name: 2wiki_smoke
+    pairs:
+      - name: shared
+        dense_backend: colbertv2
+        graph_backend: hipporag2
+        routing_rows_path: results/study_2wiki_hipporag_colbert_shared/routing_rows.jsonl
+      - name: fixed500
+        dense_backend: colbertv2
+        graph_backend: hipporag2
+        routing_rows_path: results/study_2wiki_hipporag_colbert_500/routing_rows.jsonl
+        metrics_json_path: results/study_2wiki_hipporag_colbert_500/metrics.json
