@@ -2,7 +2,7 @@
 
 Main-experiment code release for the paper project on cost-aware graph retrieval for question answering.
 
-This repository is intentionally scoped to the experiments needed for the paper's main results: probe-aware graph invocation and marginal evidence-slot allocation. Generated results, caches, raw datasets, exploratory diagnostics, backend-management scripts, and failed/ablation side tracks are not included in the public release.
+This repository is intentionally scoped to the experiments needed for the paper's main results: probe-aware graph invocation and marginal evidence-slot allocation. Generated results, caches, raw datasets, exploratory diagnostics, backend-management scripts, and side-track experiments are not included in the public release.
 
 ## Repository Layout
 
@@ -158,4 +158,4 @@ The public repository tracks only main-experiment code and configs. It intention
 - raw datasets
 - local virtual environments
 - exploratory diagnostics and backend-management scripts
-- superseded residual, counterfactual, iterative, masking, and robustness experiments
+- side-track experiments outside the main paper results
