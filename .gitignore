@@ -39,3 +39,61 @@ data/*
 
 # Local assistant/tooling scratch files
 .claude/
+
+# Keep the public release focused on main experiments. Local exploratory,
+# diagnostic, backend-robustness, and management files stay on disk but are
+# intentionally not tracked.
+configs/*
+!configs/study_hotpot_hipporag_colbert_200.yaml
+!configs/study_hotpot_hipporag_colbert_shared.yaml
+!configs/study_2wiki_hipporag_colbert_shared.yaml
+!configs/study_nq_hipporag_colbert_500.yaml
+!configs/study_mixed_hotpot2wiki_nq_colbert_shared.yaml
+
+scripts/*
+!scripts/batch_generate_from_retrieval.py
+!scripts/build_mixed_benchmark.py
+!scripts/build_mixed_hotpot2wiki_nq.sh
+!scripts/download_nq_dev.py
+!scripts/download_nq_dev.sh
+!scripts/eval_adaptive_context_budget.py
+!scripts/evaluate_generations.py
+!scripts/install_colbert.sh
+!scripts/materialize_deep_retrieval.py
+!scripts/patch_colbert_stability.py
+!scripts/plot_budget_pareto.py
+!scripts/plot_qa_budget_curve.py
+!scripts/plot_routing_pareto.py
+!scripts/prepare_2wiki_shared_corpus.sh
+!scripts/prepare_hotpot_shared_corpus.sh
+!scripts/prepare_main_table_generation_input.py
+!scripts/prepare_nq_shared_corpus.py
+!scripts/prepare_nq_shared_corpus.sh
+!scripts/prepare_shared_corpus_dataset.py
+!scripts/run_2wiki_answer_metrics.sh
+!scripts/run_answer_metrics_from_retrieval.sh
+!scripts/run_hotpot_answer_metrics.sh
+!scripts/run_hotpot_hipporag_colbert.sh
+!scripts/run_hotpot_hipporag_colbert_200.sh
+!scripts/run_hotpot_hipporag_colbert_smoke.sh
+!scripts/run_mixed_hotpot2wiki_nq_colbert.sh
+!scripts/run_nq_answer_metrics.sh
+!scripts/run_nq_hipporag_colbert_500.sh
+!scripts/run_slot_reader_sweep.py
+!scripts/run_study.sh
+!scripts/setup_conda_env.sh
+!scripts/sig_test_qa.py
+!scripts/summarize_slot_ablation.py
+
+src/*
+!src/dataset.py
+!src/features.py
+!src/model.py
+!src/retrieval_dense.py
+!src/retrieval_dense_colbert.py
+!src/retrieval_graph.py
+!src/retrieval_graph_bm25.py
+!src/retrieval_graph_hipporag.py
+!src/retrieval_graph_lightrag.py
+!src/study_main.py
+!src/utils.py
