@@ -193,14 +193,7 @@ python -m unittest discover -s tests -v
 
 If this repository is useful in your research, please cite:
 
-```bibtex
-@inproceedings{zhang2026mgea,
-  title     = {MGEA: Marginal Graph Evidence Allocation for Efficient Graph-Augmented Retrieval},
-  author    = {Zhang, Jiaheng and Zhang, Daqiang},
-  booktitle = {Proceedings of the 27th International Conference on Web Information Systems Engineering (WISE 2026)},
-  year      = {2026}
-}
-```
+
 
 ## Contact
 
